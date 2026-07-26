@@ -1,0 +1,8 @@
+export const STUDENT_LOGIN = "STUDENT_LOGIN";
+export const STUDENT_LOGIN_FAIL = "STUDENT_LOGIN_FAIL";
+export const UPDATE_PASSWORD = "UPDATE_PASSWORD";
+export const SET_ERRORS = "SET_ERRORS";
+export const GET_SUBJECT = "GET_SUBJECT";
+export const TEST_RESULT = "TEST_RESULT";
+export const ATTENDANCE = "ATTENDANCE";
+export const UPDATE_STUDENT = "UPDATE_STUDENT";

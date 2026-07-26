@@ -1,0 +1,49 @@
+import mongoose from "mongoose";
+
+const wardenSchema = mongoose.Schema({
+  name: {
+    type: String,
+    required: true,
+  },
+  email: {
+    type: String,
+    required: true,
+    unique: true,
+  },
+  avatar: {
+    type: String,
+  },
+  password: {
+    type: String,
+  },
+  username: {
+    type: String,
+  },
+  gender: {
+    type: String,
+  },
+  hostelName: {
+    type: String,
+  },
+  department: {
+    type: String,
+    default: "Hostel",
+  },
+  contactNumber: {
+    type: Number,
+  },
+  dob: {
+    type: String,
+    required: true,
+  },
+  joiningYear: {
+    type: Number,
+    required: true,
+  },
+  passwordUpdated: {
+    type: Boolean,
+    default: false,
+  },
+});
+
+export default mongoose.model("warden", wardenSchema);
